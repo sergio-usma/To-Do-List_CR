@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webpack Exercise</title>
-  </head>
-  <body>
-    <h1>Hello webpack!</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+    crossorigin="anonymous"
+  />
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto doloribus, eius expedita facilis illum sapiente voluptatem. Architecto delectus excepturi inventore modi. Aliquam atque dolorem earum pariatur reprehenderit saepe unde. A aliquam aliquid culpa dignissimos doloremque eum ipsam magni maxime mollitia officiis, pariatur perspiciatis porro possimus quam quasi, quisquam recusandae sed similique sint sit sunt tenetur velit voluptas! Accusamus adipisci alias cumque doloribus earum ex excepturi, labore, laudantium perspiciatis, quae sequi sit totam veniam. Asperiores dignissimos doloremque doloribus error ipsa magnam molestiae natus nihil nobis omnis perspiciatis quae, reprehenderit repudiandae saepe temporibus tenetur unde, voluptatem. Adipisci dolore laborum repudiandae voluptate.</p>
-  </body>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<main>
+  <div class="list">
+    <div class="list__container">
+      <div class="list__container__title">
+        <h2 class="list__container__title__text">Today's To Do</h2>
+        <button type='button' class="list__container__title__button">
+          <i class="bi bi-arrow-repeat"></i>
+        </button>
+      </div>
+      <div class="list__container__input">
+        <input
+          type="text"
+          class="list__container__input__text"
+          placeholder="Add a new task..."
+        />
+        <button type='button' class="list__container__input__button">
+          <i class="bi bi-arrow-return-left"></i>
+        </button>
+      </div>
+
+      <ul class="list__container__checklist"></ul>
+
+      <button type='button' class="list__container__button">Clear all completed</button>
+    </div>
+  </div>
+</main>
+
+<script src="./index.js" type="module"></script>
+</body>
 </html>
